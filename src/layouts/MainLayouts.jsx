@@ -1,9 +1,17 @@
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 
 const MainLayouts = () => {
     return (
-        <div>
-            this is layout
+        <div className="w-11/12 mx-auto">
+            
+            <Navbar></Navbar>
+
+
+
+            <Footer></Footer>
+
         </div>
     );
 };
