@@ -5,7 +5,8 @@ import { MdFavoriteBorder } from "react-icons/md";
 
 const Navbar = () => {
     return (
-        <div className="navbar py-4">
+        <div className="container mx-auto">
+            <div className="navbar py-4">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -14,34 +15,38 @@ const Navbar = () => {
                     <ul
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        
+
                         <NavLink to='/'>Home</NavLink>
                         <NavLink>Statistics</NavLink>
                         <NavLink to='/dashboard'>Dashboard</NavLink>
 
                     </ul>
                 </div>
-                <a className="text-xl font-bold">Gadget Heaven</a>
+                <a className="text-xl font-bold text-white">Gadget Heaven</a>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1 gap-8 text-gray-800">
+                <ul className="menu menu-horizontal px-1 gap-8 text-gray-800 text-white">
 
                     <NavLink to='/'>Home</NavLink>
                     <NavLink>Statistics</NavLink>
                     <NavLink to='/dashboard'>Dashboard</NavLink>
-                    
+
                 </ul>
             </div>
             <div className="navbar-end gap-4 text-xl">
-                <div className="border p-2 rounded-full border-gray-500">
+                <div className="border p-2 rounded-full border-gray-500 bg-white">
                     <NavLink to='/cart'><IoCartOutline></IoCartOutline></NavLink>
                 </div>
 
-                <div className="border p-2 rounded-full border-gray-500">
-                     <NavLink to='/wishlist'><MdFavoriteBorder></MdFavoriteBorder></NavLink>
+                <div className="border p-2 rounded-full border-gray-500 bg-white">
+                    <NavLink to='/wishlist'><MdFavoriteBorder></MdFavoriteBorder></NavLink>
                 </div>
             </div>
         </div>
+        </div>
+        
+
+
     );
 };
 

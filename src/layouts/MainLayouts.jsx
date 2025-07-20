@@ -5,19 +5,23 @@ import Navbar from "../components/Navbar";
 
 const MainLayouts = () => {
     return (
-        <div className="container mx-auto">
+        <>
+       
+            <div className="mx-auto container absolute top-8 left-1/2 -translate-x-1/2">
+               
+                <Navbar></Navbar>
+        
+            </div>
             
-            <Navbar></Navbar>
-
-
-            <div className="min-h-[calc(100vh-450px)]">
-                <Outlet></Outlet>
+             <div className="min-h-[calc(100vh-450px)]">
+                <Outlet></Outlet> 
             </div>
 
 
-            <Footer></Footer>
-
-        </div>
+            <div className="container mx-auto">
+                <Footer></Footer>
+            </div>
+        </>
     );
 };
 

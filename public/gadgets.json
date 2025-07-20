@@ -1,0 +1,222 @@
+[
+  {
+    "product_id": "LAP001",
+    "product_title": "Dell Inspiron 15",
+    "product_image": "https://example.com/images/dell-inspiron-15.jpg",
+    "category": "Laptops",
+    "price": 649,
+    "description": "Powerful laptop with Intel Core i5 and 8GB RAM.",
+    "Specification": ["Intel Core i5", "8GB RAM", "256GB SSD", "15.6-inch FHD"],
+    "availability": true,
+    "rating": 4.2
+  },
+  {
+    "product_id": "LAP002",
+    "product_title": "HP Pavilion x360",
+    "product_image": "https://example.com/images/hp-pavilion-x360.jpg",
+    "category": "Laptops",
+    "price": 729,
+    "description": "Convertible touchscreen laptop with Intel Core i7.",
+    "Specification": ["Intel Core i7", "16GB RAM", "512GB SSD", "14-inch Touchscreen"],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "LAP003",
+    "product_title": "Lenovo IdeaPad 3",
+    "product_image": "https://example.com/images/lenovo-ideapad-3.jpg",
+    "category": "Laptops",
+    "price": 589,
+    "description": "Affordable laptop for students and professionals.",
+    "Specification": ["AMD Ryzen 5", "8GB RAM", "256GB SSD", "15.6-inch Display"],
+    "availability": false,
+    "rating": 4.1
+  },
+  {
+    "product_id": "LAP004",
+    "product_title": "Acer Aspire 5",
+    "product_image": "https://example.com/images/acer-aspire-5.jpg",
+    "category": "Laptops",
+    "price": 599,
+    "description": "Slim laptop with long battery life.",
+    "Specification": ["Intel Core i5", "8GB RAM", "512GB SSD", "15.6-inch FHD"],
+    "availability": true,
+    "rating": 4.3
+  },
+  {
+    "product_id": "LAP005",
+    "product_title": "ASUS VivoBook S15",
+    "product_image": "https://example.com/images/asus-vivobook-s15.jpg",
+    "category": "Laptops",
+    "price": 679,
+    "description": "Stylish and fast laptop with Intel Core i5.",
+    "Specification": ["Intel Core i5", "12GB RAM", "512GB SSD", "15.6-inch FHD"],
+    "availability": false,
+    "rating": 4.0
+  },
+  {
+    "product_id": "LAP006",
+    "product_title": "MSI Modern 14",
+    "product_image": "https://example.com/images/msi-modern-14.jpg",
+    "category": "Laptops",
+    "price": 549,
+    "description": "Lightweight laptop for productivity on-the-go.",
+    "Specification": ["Intel Core i3", "8GB RAM", "256GB SSD", "14-inch Display"],
+    "availability": true,
+    "rating": 4.1
+  },
+  {
+    "product_id": "PH001",
+    "product_title": "Samsung Galaxy S23",
+    "product_image": "https://example.com/images/galaxy-s23.jpg",
+    "category": "Phones",
+    "price": 799,
+    "description": "Flagship phone with powerful camera and processor.",
+    "Specification": ["Snapdragon 8 Gen 2", "8GB RAM", "128GB Storage", "50MP Camera"],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "PH002",
+    "product_title": "OnePlus 11R",
+    "product_image": "https://example.com/images/oneplus-11r.jpg",
+    "category": "Phones",
+    "price": 499,
+    "description": "High-performance phone with fluid display.",
+    "Specification": ["Snapdragon 8+ Gen 1", "8GB RAM", "256GB Storage", "120Hz AMOLED"],
+    "availability": true,
+    "rating": 4.4
+  },
+  {
+    "product_id": "PH003",
+    "product_title": "Google Pixel 7a",
+    "product_image": "https://example.com/images/pixel-7a.jpg",
+    "category": "Phones",
+    "price": 499,
+    "description": "Pure Android experience with great camera.",
+    "Specification": ["Google Tensor G2", "6GB RAM", "128GB Storage", "OLED Display"],
+    "availability": false,
+    "rating": 4.5
+  },
+  {
+    "product_id": "PH004",
+    "product_title": "Xiaomi Redmi Note",
+    "product_image": "https://example.com/images/redmi-note-13.jpg",
+    "category": "Phones",
+    "price": 299,
+    "description": "Affordable smartphone with great performance.",
+    "Specification": ["Snapdragon 7s Gen 2", "8GB RAM", "128GB Storage", "120Hz AMOLED"],
+    "availability": true,
+    "rating": 4.3
+  },
+  {
+    "product_id": "PH005",
+    "product_title": "Realme GT Neo 5",
+    "product_image": "https://example.com/images/realme-gt-neo5.jpg",
+    "category": "Phones",
+    "price": 399,
+    "description": "Gaming phone with 144Hz display and fast charging.",
+    "Specification": ["Snapdragon 8+ Gen 1", "12GB RAM", "256GB Storage", "144Hz OLED"],
+    "availability": true,
+    "rating": 4.4
+  },
+  {
+    "product_id": "SW001",
+    "product_title": "Apple Watch Series 9",
+    "product_image": "https://example.com/images/apple-watch-9.jpg",
+    "category": "Smart Watches",
+    "price": 399,
+    "description": "Smartwatch with advanced health features.",
+    "Specification": ["ECG", "Blood Oxygen", "Sleep Tracking", "Always-On Display"],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "SW002",
+    "product_title": "Samsung Galaxy Watch 6",
+    "product_image": "https://example.com/images/galaxy-watch-6.jpg",
+    "category": "Smart Watches",
+    "price": 299,
+    "description": "Stylish smartwatch with body composition tracking.",
+    "Specification": ["Heart Rate", "GPS", "Sleep Score", "AMOLED Display"],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "SW003",
+    "product_title": "Amazfit GTR 4",
+    "product_image": "https://example.com/images/amazfit-gtr-4.jpg",
+    "category": "Smart Watches",
+    "price": 199,
+    "description": "Battery-efficient smartwatch with built-in Alexa.",
+    "Specification": ["Dual GPS", "150+ Sports Modes", "Alexa", "AMOLED Display"],
+    "availability": true,
+    "rating": 4.2
+  },
+  {
+    "product_id": "MAC001",
+    "product_title": "MacBook Air M2",
+    "product_image": "https://example.com/images/macbook-air-m2.jpg",
+    "category": "MacBook",
+    "price": 1199,
+    "description": "Thin and light MacBook with powerful M2 chip.",
+    "Specification": ["Apple M2", "8GB RAM", "256GB SSD", "13.6-inch Retina"],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "MAC002",
+    "product_title": "MacBook Pro 14",
+    "product_image": "https://example.com/images/macbook-pro-m3.jpg",
+    "category": "MacBook",
+    "price": 1999,
+    "description": "Professional-grade performance with Liquid Retina XDR.",
+    "Specification": ["Apple M3", "16GB RAM", "512GB SSD", "14-inch XDR Display"],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "MAC003",
+    "product_title": "MacBook Air M1",
+    "product_image": "https://example.com/images/macbook-air-m1.jpg",
+    "category": "MacBook",
+    "price": 999,
+    "description": "Efficient and affordable MacBook with M1 chip.",
+    "Specification": ["Apple M1", "8GB RAM", "256GB SSD", "13.3-inch Retina"],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "IPH001",
+    "product_title": "iPhone 15 Pro",
+    "product_image": "https://example.com/images/iphone-15-pro.jpg",
+    "category": "IPhone",
+    "price": 999,
+    "description": "Premium iPhone with titanium frame and A17 Pro chip.",
+    "Specification": ["A17 Pro", "128GB Storage", "Triple Camera", "6.1-inch Display"],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "ACC001",
+    "product_title": "Logitech Wireless Mouse",
+    "product_image": "https://example.com/images/logitech-mx-master-3s.jpg",
+    "category": "Accessories",
+    "price": 99,
+    "description": "High-performance wireless mouse with quiet clicks and fast scrolling.",
+    "Specification": ["Silent Click", "MagSpeed Scroll", "USB-C Charging", "Bluetooth & USB Receiver"],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "ACC002",
+    "product_title": "Anker 737 Power Bank",
+    "product_image": "https://example.com/images/anker-737-powerbank.jpg",
+    "category": "Accessories",
+    "price": 129,
+    "description": "High-capacity 24,000mAh power bank with fast charging and digital display.",
+    "Specification": ["140W Output", "Smart Digital Display", "USB-C PD 3.1", "Multiple Device Charging"],
+    "availability": true,
+    "rating": 4.6
+  }
+]
