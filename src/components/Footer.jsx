@@ -8,7 +8,7 @@ const Footer = () => {
                 <p className="text-gray-500 pt-2">Leading the way in cutting-edge technology and innovation.</p>
             
 
-            <div class="divider"></div>
+            <div className="divider"></div>
             
             <footer className="footer sm:footer-horizontal">
                 <nav className="md:mx-auto">

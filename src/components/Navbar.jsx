@@ -22,10 +22,10 @@ const Navbar = () => {
 
                     </ul>
                 </div>
-                <a className="text-xl font-bold text-white">Gadget Heaven</a>
+                <a className="text-xl font-bold">Gadget Heaven</a>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1 gap-8 text-gray-800 text-white">
+                <ul className="menu menu-horizontal px-1 gap-8 ">
 
                     <NavLink to='/'>Home</NavLink>
                     <NavLink>Statistics</NavLink>
@@ -34,11 +34,11 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end gap-4 text-xl">
-                <div className="border p-2 rounded-full border-gray-500 bg-white">
+                <div className="border p-2 rounded-full border-gray-500 bg-white text-black">
                     <NavLink to='/cart'><IoCartOutline></IoCartOutline></NavLink>
                 </div>
 
-                <div className="border p-2 rounded-full border-gray-500 bg-white">
+                <div className="border p-2 rounded-full border-gray-500 bg-white text-black">
                     <NavLink to='/wishlist'><MdFavoriteBorder></MdFavoriteBorder></NavLink>
                 </div>
             </div>
