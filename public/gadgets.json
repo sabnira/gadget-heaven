@@ -2,7 +2,7 @@
   {
     "product_id": "LAP001",
     "product_title": "Dell Inspiron 15",
-    "product_image": "https://example.com/images/dell-inspiron-15.jpg",
+    "product_image": "https://m.media-amazon.com/images/I/61IJqiVvruL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
     "category": "Laptops",
     "price": 649,
     "description": "Powerful laptop with Intel Core i5 and 8GB RAM.",
@@ -13,7 +13,7 @@
   {
     "product_id": "LAP002",
     "product_title": "HP Pavilion x360",
-    "product_image": "https://example.com/images/hp-pavilion-x360.jpg",
+    "product_image": "https://m.media-amazon.com/images/I/61cuuA7gZNL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
     "category": "Laptops",
     "price": 729,
     "description": "Convertible touchscreen laptop with Intel Core i7.",
@@ -24,7 +24,7 @@
   {
     "product_id": "LAP003",
     "product_title": "Lenovo IdeaPad 3",
-    "product_image": "https://example.com/images/lenovo-ideapad-3.jpg",
+    "product_image": "https://m.media-amazon.com/images/I/61QGMX0Qy6L.__AC_SY300_SX300_QL70_FMwebp_.jpg",
     "category": "Laptops",
     "price": 589,
     "description": "Affordable laptop for students and professionals.",
@@ -35,7 +35,7 @@
   {
     "product_id": "LAP004",
     "product_title": "Acer Aspire 5",
-    "product_image": "https://example.com/images/acer-aspire-5.jpg",
+    "product_image": "https://m.media-amazon.com/images/I/71+hefXv48L._AC_SX679_.jpg",
     "category": "Laptops",
     "price": 599,
     "description": "Slim laptop with long battery life.",
@@ -46,7 +46,7 @@
   {
     "product_id": "LAP005",
     "product_title": "ASUS VivoBook S15",
-    "product_image": "https://example.com/images/asus-vivobook-s15.jpg",
+    "product_image": "https://m.media-amazon.com/images/I/61lvElgnZZL._AC_SX679_.jpg",
     "category": "Laptops",
     "price": 679,
     "description": "Stylish and fast laptop with Intel Core i5.",
@@ -57,7 +57,7 @@
   {
     "product_id": "LAP006",
     "product_title": "MSI Modern 14",
-    "product_image": "https://example.com/images/msi-modern-14.jpg",
+    "product_image": "https://m.media-amazon.com/images/I/51ALnB6MziL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
     "category": "Laptops",
     "price": 549,
     "description": "Lightweight laptop for productivity on-the-go.",
@@ -68,7 +68,7 @@
   {
     "product_id": "PH001",
     "product_title": "Samsung Galaxy S23",
-    "product_image": "https://example.com/images/galaxy-s23.jpg",
+    "product_image": "https://m.media-amazon.com/images/I/61x2OKbEy2L.__AC_SX300_SY300_QL70_FMwebp_.jpg",
     "category": "Phones",
     "price": 799,
     "description": "Flagship phone with powerful camera and processor.",
@@ -79,7 +79,7 @@
   {
     "product_id": "PH002",
     "product_title": "OnePlus 11R",
-    "product_image": "https://example.com/images/oneplus-11r.jpg",
+    "product_image": "https://m.media-amazon.com/images/I/81KpTjiIaUL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
     "category": "Phones",
     "price": 499,
     "description": "High-performance phone with fluid display.",
@@ -90,7 +90,7 @@
   {
     "product_id": "PH003",
     "product_title": "Google Pixel 7a",
-    "product_image": "https://example.com/images/pixel-7a.jpg",
+    "product_image": "https://m.media-amazon.com/images/I/61jNlUYC3mL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
     "category": "Phones",
     "price": 499,
     "description": "Pure Android experience with great camera.",
@@ -101,7 +101,7 @@
   {
     "product_id": "PH004",
     "product_title": "Xiaomi Redmi Note",
-    "product_image": "https://example.com/images/redmi-note-13.jpg",
+    "product_image": "https://m.media-amazon.com/images/I/71IJ2blHrRL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
     "category": "Phones",
     "price": 299,
     "description": "Affordable smartphone with great performance.",
@@ -112,7 +112,7 @@
   {
     "product_id": "PH005",
     "product_title": "Realme GT Neo 5",
-    "product_image": "https://example.com/images/realme-gt-neo5.jpg",
+    "product_image": "https://m.media-amazon.com/images/I/81qOD8EZTjL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
     "category": "Phones",
     "price": 399,
     "description": "Gaming phone with 144Hz display and fast charging.",
@@ -123,7 +123,7 @@
   {
     "product_id": "SW001",
     "product_title": "Apple Watch Series 9",
-    "product_image": "https://example.com/images/apple-watch-9.jpg",
+    "product_image": "https://m.media-amazon.com/images/I/712wglSBTaL.__AC_SY445_SX342_QL70_FMwebp_.jpg",
     "category": "Smart Watches",
     "price": 399,
     "description": "Smartwatch with advanced health features.",
@@ -134,7 +134,7 @@
   {
     "product_id": "SW002",
     "product_title": "Samsung Galaxy Watch 6",
-    "product_image": "https://example.com/images/galaxy-watch-6.jpg",
+    "product_image": "https://m.media-amazon.com/images/I/71SZNup1qrL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
     "category": "Smart Watches",
     "price": 299,
     "description": "Stylish smartwatch with body composition tracking.",
@@ -145,7 +145,7 @@
   {
     "product_id": "SW003",
     "product_title": "Amazfit GTR 4",
-    "product_image": "https://example.com/images/amazfit-gtr-4.jpg",
+    "product_image": "https://m.media-amazon.com/images/I/61b-75iHbuL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
     "category": "Smart Watches",
     "price": 199,
     "description": "Battery-efficient smartwatch with built-in Alexa.",
@@ -156,7 +156,7 @@
   {
     "product_id": "MAC001",
     "product_title": "MacBook Air M2",
-    "product_image": "https://example.com/images/macbook-air-m2.jpg",
+    "product_image": "https://m.media-amazon.com/images/I/71f5Eu5lJSL.__AC_SY445_SX342_QL70_FMwebp_.jpg",
     "category": "MacBook",
     "price": 1199,
     "description": "Thin and light MacBook with powerful M2 chip.",
@@ -167,7 +167,7 @@
   {
     "product_id": "MAC002",
     "product_title": "MacBook Pro 14",
-    "product_image": "https://example.com/images/macbook-pro-m3.jpg",
+    "product_image": "https://m.media-amazon.com/images/I/61cCf94xIEL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
     "category": "MacBook",
     "price": 1999,
     "description": "Professional-grade performance with Liquid Retina XDR.",
@@ -178,7 +178,7 @@
   {
     "product_id": "MAC003",
     "product_title": "MacBook Air M1",
-    "product_image": "https://example.com/images/macbook-air-m1.jpg",
+    "product_image": "https://m.media-amazon.com/images/I/71nllewIU9L.__AC_SY445_SX342_QL70_FMwebp_.jpg",
     "category": "MacBook",
     "price": 999,
     "description": "Efficient and affordable MacBook with M1 chip.",
@@ -189,7 +189,7 @@
   {
     "product_id": "IPH001",
     "product_title": "iPhone 15 Pro",
-    "product_image": "https://example.com/images/iphone-15-pro.jpg",
+    "product_image": "https://m.media-amazon.com/images/I/71sajlCquGL._AC_SX679_.jpg",
     "category": "IPhone",
     "price": 999,
     "description": "Premium iPhone with titanium frame and A17 Pro chip.",
@@ -200,7 +200,7 @@
   {
     "product_id": "ACC001",
     "product_title": "Logitech Wireless Mouse",
-    "product_image": "https://example.com/images/logitech-mx-master-3s.jpg",
+    "product_image": "https://m.media-amazon.com/images/I/61xgpXecLML.__AC_SX300_SY300_QL70_FMwebp_.jpg",
     "category": "Accessories",
     "price": 99,
     "description": "High-performance wireless mouse with quiet clicks and fast scrolling.",
@@ -211,7 +211,7 @@
   {
     "product_id": "ACC002",
     "product_title": "Anker 737 Power Bank",
-    "product_image": "https://example.com/images/anker-737-powerbank.jpg",
+    "product_image": "https://m.media-amazon.com/images/I/61W6GzgNeNL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
     "category": "Accessories",
     "price": 129,
     "description": "High-capacity 24,000mAh power bank with fast charging and digital display.",
