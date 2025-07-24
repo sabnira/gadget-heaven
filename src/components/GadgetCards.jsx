@@ -1,4 +1,4 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useLocation, useParams } from "react-router-dom";
 import Card from "./Card";
 import { useEffect, useState } from "react";
 
@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 
         const {category} = useParams();
         const data = useLoaderData();
+        const location = useLocation();
 
         const [gadgets, setGadgets] = useState([]);
 
@@ -15,11 +16,14 @@ import { useEffect, useState } from "react";
                 const filteredByCategory = [...data].filter( gadget => gadget.category === category)
                 setGadgets(filteredByCategory)
             }
+            else if (location.pathname === "/category") {
+                setGadgets(data)
+            }
             else {
                 setGadgets(data.slice(0, 6))
             }
             
-        },[category, data])
+        },[category, data, location.pathname])
         
         
         return (

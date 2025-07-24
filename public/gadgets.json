@@ -1,5 +1,16 @@
 [
   {
+    "product_id": "PH002",
+    "product_title": "OnePlus 11R",
+    "product_image": "https://m.media-amazon.com/images/I/81KpTjiIaUL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+    "category": "Phones",
+    "price": 499,
+    "description": "High-performance phone with fluid display.",
+    "Specification": ["Snapdragon 8+ Gen 1", "8GB RAM", "256GB Storage", "120Hz AMOLED"],
+    "availability": true,
+    "rating": 4.4
+  },
+  {
     "product_id": "LAP001",
     "product_title": "Dell Inspiron 15",
     "product_image": "https://m.media-amazon.com/images/I/61IJqiVvruL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
@@ -9,6 +20,39 @@
     "Specification": ["Intel Core i5", "8GB RAM", "256GB SSD", "15.6-inch FHD"],
     "availability": true,
     "rating": 4.2
+  },
+  {
+    "product_id": "PH004",
+    "product_title": "Xiaomi Redmi Note",
+    "product_image": "https://m.media-amazon.com/images/I/71IJ2blHrRL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+    "category": "Phones",
+    "price": 299,
+    "description": "Affordable smartphone with great performance.",
+    "Specification": ["Snapdragon 7s Gen 2", "8GB RAM", "128GB Storage", "120Hz AMOLED"],
+    "availability": true,
+    "rating": 4.3
+  },
+  {
+    "product_id": "SW002",
+    "product_title": "Samsung Galaxy Watch 6",
+    "product_image": "https://m.media-amazon.com/images/I/71SZNup1qrL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+    "category": "Smart Watches",
+    "price": 299,
+    "description": "Stylish smartwatch with body composition tracking.",
+    "Specification": ["Heart Rate", "GPS", "Sleep Score", "AMOLED Display"],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "ACC001",
+    "product_title": "Logitech Wireless Mouse",
+    "product_image": "https://m.media-amazon.com/images/I/61xgpXecLML.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+    "category": "Accessories",
+    "price": 99,
+    "description": "High-performance wireless mouse with quiet clicks and fast scrolling.",
+    "Specification": ["Silent Click", "MagSpeed Scroll", "USB-C Charging", "Bluetooth & USB Receiver"],
+    "availability": true,
+    "rating": 4.8
   },
   {
     "product_id": "LAP002",
@@ -22,6 +66,17 @@
     "rating": 4.5
   },
   {
+    "product_id": "ACC002",
+    "product_title": "Anker 737 Power Bank",
+    "product_image": "https://m.media-amazon.com/images/I/61W6GzgNeNL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+    "category": "Accessories",
+    "price": 129,
+    "description": "High-capacity 24,000mAh power bank with fast charging and digital display.",
+    "Specification": ["140W Output", "Smart Digital Display", "USB-C PD 3.1", "Multiple Device Charging"],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
     "product_id": "LAP003",
     "product_title": "Lenovo IdeaPad 3",
     "product_image": "https://m.media-amazon.com/images/I/61QGMX0Qy6L.__AC_SY300_SX300_QL70_FMwebp_.jpg",
@@ -31,6 +86,17 @@
     "Specification": ["AMD Ryzen 5", "8GB RAM", "256GB SSD", "15.6-inch Display"],
     "availability": false,
     "rating": 4.1
+  },
+  {
+    "product_id": "PH001",
+    "product_title": "Samsung Galaxy S23",
+    "product_image": "https://m.media-amazon.com/images/I/61x2OKbEy2L.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+    "category": "Phones",
+    "price": 799,
+    "description": "Flagship phone with powerful camera and processor.",
+    "Specification": ["Snapdragon 8 Gen 2", "8GB RAM", "128GB Storage", "50MP Camera"],
+    "availability": true,
+    "rating": 4.6
   },
   {
     "product_id": "LAP004",
@@ -66,28 +132,6 @@
     "rating": 4.1
   },
   {
-    "product_id": "PH001",
-    "product_title": "Samsung Galaxy S23",
-    "product_image": "https://m.media-amazon.com/images/I/61x2OKbEy2L.__AC_SX300_SY300_QL70_FMwebp_.jpg",
-    "category": "Phones",
-    "price": 799,
-    "description": "Flagship phone with powerful camera and processor.",
-    "Specification": ["Snapdragon 8 Gen 2", "8GB RAM", "128GB Storage", "50MP Camera"],
-    "availability": true,
-    "rating": 4.6
-  },
-  {
-    "product_id": "PH002",
-    "product_title": "OnePlus 11R",
-    "product_image": "https://m.media-amazon.com/images/I/81KpTjiIaUL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
-    "category": "Phones",
-    "price": 499,
-    "description": "High-performance phone with fluid display.",
-    "Specification": ["Snapdragon 8+ Gen 1", "8GB RAM", "256GB Storage", "120Hz AMOLED"],
-    "availability": true,
-    "rating": 4.4
-  },
-  {
     "product_id": "PH003",
     "product_title": "Google Pixel 7a",
     "product_image": "https://m.media-amazon.com/images/I/61jNlUYC3mL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
@@ -97,17 +141,6 @@
     "Specification": ["Google Tensor G2", "6GB RAM", "128GB Storage", "OLED Display"],
     "availability": false,
     "rating": 4.5
-  },
-  {
-    "product_id": "PH004",
-    "product_title": "Xiaomi Redmi Note",
-    "product_image": "https://m.media-amazon.com/images/I/71IJ2blHrRL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
-    "category": "Phones",
-    "price": 299,
-    "description": "Affordable smartphone with great performance.",
-    "Specification": ["Snapdragon 7s Gen 2", "8GB RAM", "128GB Storage", "120Hz AMOLED"],
-    "availability": true,
-    "rating": 4.3
   },
   {
     "product_id": "PH005",
@@ -130,17 +163,6 @@
     "Specification": ["ECG", "Blood Oxygen", "Sleep Tracking", "Always-On Display"],
     "availability": true,
     "rating": 4.7
-  },
-  {
-    "product_id": "SW002",
-    "product_title": "Samsung Galaxy Watch 6",
-    "product_image": "https://m.media-amazon.com/images/I/71SZNup1qrL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
-    "category": "Smart Watches",
-    "price": 299,
-    "description": "Stylish smartwatch with body composition tracking.",
-    "Specification": ["Heart Rate", "GPS", "Sleep Score", "AMOLED Display"],
-    "availability": true,
-    "rating": 4.5
   },
   {
     "product_id": "SW003",
@@ -196,27 +218,5 @@
     "Specification": ["A17 Pro", "128GB Storage", "Triple Camera", "6.1-inch Display"],
     "availability": true,
     "rating": 4.9
-  },
-  {
-    "product_id": "ACC001",
-    "product_title": "Logitech Wireless Mouse",
-    "product_image": "https://m.media-amazon.com/images/I/61xgpXecLML.__AC_SX300_SY300_QL70_FMwebp_.jpg",
-    "category": "Accessories",
-    "price": 99,
-    "description": "High-performance wireless mouse with quiet clicks and fast scrolling.",
-    "Specification": ["Silent Click", "MagSpeed Scroll", "USB-C Charging", "Bluetooth & USB Receiver"],
-    "availability": true,
-    "rating": 4.8
-  },
-  {
-    "product_id": "ACC002",
-    "product_title": "Anker 737 Power Bank",
-    "product_image": "https://m.media-amazon.com/images/I/61W6GzgNeNL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
-    "category": "Accessories",
-    "price": 129,
-    "description": "High-capacity 24,000mAh power bank with fast charging and digital display.",
-    "Specification": ["140W Output", "Smart Digital Display", "USB-C PD 3.1", "Multiple Device Charging"],
-    "availability": true,
-    "rating": 4.6
   }
 ]
