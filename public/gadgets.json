@@ -62,7 +62,7 @@
     "price": 729,
     "description": "Convertible touchscreen laptop with Intel Core i7.",
     "Specification": ["Intel Core i7", "16GB RAM", "512GB SSD", "14-inch Touchscreen"],
-    "availability": true,
+    "availability": false,
     "rating": 4.5
   },
   {
