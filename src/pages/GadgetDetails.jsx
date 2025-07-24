@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import Heading from "../components/Heading";
 
 
 const GadgetDetails = () => {
@@ -19,6 +20,9 @@ const GadgetDetails = () => {
 
     return (
         <div>
+
+            <Heading title={'Product Details'} subtitle={'Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!'}></Heading>
+
            detail {product_title}
         </div>
     );
