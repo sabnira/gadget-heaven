@@ -35,11 +35,11 @@ const Navbar = () => {
             </div>
             <div className="navbar-end gap-4 text-xl">
                 <div className="border p-2 rounded-full border-gray-500 bg-white text-black">
-                    <NavLink to='/cart'><IoCartOutline></IoCartOutline></NavLink>
+                    <NavLink to='/dashboard'><IoCartOutline></IoCartOutline></NavLink>
                 </div>
 
                 <div className="border p-2 rounded-full border-gray-500 bg-white text-black">
-                    <NavLink to='/wishlist'><MdFavoriteBorder></MdFavoriteBorder></NavLink>
+                    <NavLink to='/dashboard'><MdFavoriteBorder></MdFavoriteBorder></NavLink>
                 </div>
             </div>
         </div>

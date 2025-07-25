@@ -7,6 +7,7 @@ import GadgetDetails from "../pages/GadgetDetails";
 
 
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -38,6 +39,7 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard></Dashboard>,
+        loader: () => fetch('../gadgets.json'),
       },
       {
         path: "/gadget/:id",
