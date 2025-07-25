@@ -3,7 +3,7 @@ import { NavLink, useLoaderData, useParams } from "react-router-dom";
 import ReactStarsRating from 'react-awesome-stars-rating';
 import { IoCartOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
-import { addCart } from "../utils";
+import { addCart, addWishlist } from "../utils";
 
 const GadgetDetails = () => {
 
@@ -23,6 +23,10 @@ const GadgetDetails = () => {
         addCart(id)
     }
 
+    const handleWishGadget = id => {
+        addWishlist(id)
+    }
+   
     return (
         <div className="bg-gray-100">
 
@@ -93,7 +97,7 @@ const GadgetDetails = () => {
                             </button>
 
 
-                            <button className="border px-3 rounded-full border-gray-500 hover:bg-[rgb(149,56,226)] hover:text-white text-lg"><FaRegHeart></FaRegHeart></button>
+                            <button onClick={() => handleWishGadget(product_id)} className="border px-3 rounded-full border-gray-500 hover:bg-[rgb(149,56,226)] hover:text-white text-lg"><FaRegHeart></FaRegHeart></button>
                         </div>
                     </div>
                 </div>

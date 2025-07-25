@@ -24,7 +24,15 @@ const addCart = id => {
 
 
 
-//remove a CART from local storage
+//remove a coffee from local storage
+const removeCart = id => {
+    //get all previously saved coffee data
+    const favorites = getAllFavorites()
+    const remaining = favorites.filter(coffee => coffee.id != id)
+
+    localStorage.setItem('favorites', JSON.stringify(remaining))
+    toast.success('Successfully Removed!');
+}
 
 
 
@@ -49,7 +57,10 @@ const addWishlist = id => {
 
     wishlists.push(id);
 
-    localStorage.setItem('carts', JSON.stringify(wishlists))
+    localStorage.setItem('wishlists', JSON.stringify(wishlists))
 }
+
+
+
 
 export {getAllCarts, addCart, getAllWishlist, addWishlist}
