@@ -3,8 +3,8 @@ import { useLoaderData } from 'react-router-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { getAllCarts } from '../utils';
-import Card from '../components/Card';
 import AddToCart from '../components/AddToCart';
+import { GiSettingsKnobs } from "react-icons/gi";
 
 
 const Dashboard = () => {
@@ -47,14 +47,15 @@ const Dashboard = () => {
                 <TabPanel>
                     <div className='w-full md:w-6xl mx-auto'>
 
-                        <div className='flex'>
-                            <div className=''>
-                                <h2>Cart</h2>
+                        <div className='flex flex-col md:flex-row pt-6 pb-2  items-center'>
+                            <div className='md:w-4/6 px-4 font-bold'>
+                                <h2 className='text-xl'>Cart</h2>
                             </div>
-                            <div className=''>
-                                <h2>Total cost: </h2>
-                                <button>Sort By Price</button>
-                                <button>Purchase</button>
+                            <div className='md:w-2/6 flex gap-4 items-center'>
+                                <h2>Total cost: 999</h2>
+                                <button className='flex gap-2 items-center border-2 p-2 rounded-4xl text-[rgb(149,56,226)] border-[rgb(149,56,226)] font-semibold'>Sort By Price <GiSettingsKnobs></GiSettingsKnobs></button>
+                                
+                                <button className='px-4 py-2 rounded-4xl text-white bg-[rgb(149,56,226)]'>Purchase</button>
                             </div>
                         </div>
 
