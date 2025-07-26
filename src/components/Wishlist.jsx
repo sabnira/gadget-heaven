@@ -1,13 +1,11 @@
 import { MdOutlineCancel } from "react-icons/md";
-import { addCart } from "../utils";
 
-const WishList = ({ wishlist }) => {
+
+const WishList = ({ wishlist, handleRemoveWishlist, handleAddToCart }) => {
 
     const {product_id, product_image, product_title, price, description } = wishlist
 
-    const handleGadget = id => {
-        addCart(id)
-    }
+   
 
     return (
         <div className="flex flex-col md:flex-row gap-4 my-4 p-4 bg-white rounded-2xl">
@@ -24,13 +22,13 @@ const WishList = ({ wishlist }) => {
                 <h4 className="font-semibold">Price: ${price}</h4>
 
                 <button
-                    onClick={() => handleGadget(product_id)}
+                    onClick={() => handleAddToCart(product_id)}
                     className="btn mt-4 rounded-4xl bg-[rgb(149,56,226)] text-white hover:bg-white hover:text-[rgb(149,56,226)] hover:border-[rgb(149,56,226)] ">
                     Add To Card
                 </button>
             </div>
 
-            <div className="md:w-1/9 text-3xl  text-red-400">
+            <div onClick={() => handleRemoveWishlist(product_id)} className="md:w-1/9 text-3xl  text-red-400">
                 <MdOutlineCancel></MdOutlineCancel>
             </div>
         </div>

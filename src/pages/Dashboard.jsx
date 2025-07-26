@@ -1,19 +1,23 @@
 import { useEffect, useState } from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, useNavigate } from 'react-router-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import { getAllCarts, getAllWishlist } from '../utils';
+import { addCart, getAllCarts, getAllWishlist, removeCart, removeWishlist } from '../utils';
 import AddToCart from '../components/AddToCart';
 import { GiSettingsKnobs } from "react-icons/gi";
 import WishList from '../components/WishList';
+import image from '../assets/Group.png'
 
 
 const Dashboard = () => {
 
     const data = useLoaderData();
+    const navigate = useNavigate();
+
 
     const [gadget, setGadget] = useState([])
     const [wishlist, setWishlist] = useState([]);
+
 
     useEffect(() => {
         const allCarts = getAllCarts()
@@ -25,6 +29,40 @@ const Dashboard = () => {
         setWishlist(wishList)
 
     }, [data])
+
+    const handleRemove = (id) => {
+        removeCart(id)
+        const updatedCartIds = getAllCarts()
+        const updatedCartList = data.filter(item => updatedCartIds.includes(item.product_id))
+        setGadget(updatedCartList)
+    }
+
+    const handleRemoveWishlist = (id) => {
+        removeWishlist(id)
+        const updatedWishlistIds = getAllWishlist()
+        const updatedWishlist = data.filter(item => updatedWishlistIds.includes(item.product_id))
+        setWishlist(updatedWishlist)
+    }
+
+
+    const handleAddToCart = (id) => {
+        addCart(id);
+        const updatedCartIds = getAllCarts();
+        const updatedCartList = data.filter(item => updatedCartIds.includes(item.product_id));
+        setGadget(updatedCartList);
+    };
+
+    const totalCost = gadget.reduce((acc, item) => acc + Number(item.price), 0);
+
+    const handleSort = () => {
+        const sorted = [...gadget].sort((a, b) => b.price - a.price)
+        setGadget(sorted)
+    }
+
+    const handlePurchase = () => {
+        document.getElementById('my_modal_1').showModal();
+    };
+
 
 
     return (
@@ -52,21 +90,41 @@ const Dashboard = () => {
                     <TabPanel>
                         <div className='w-full md:w-6xl mx-auto'>
 
-                            <div className='flex flex-col md:flex-row pt-6 pb-2  items-center'>
-                                <div className='md:w-4/6 px-4 font-bold'>
+                            <div className='flex flex-col md:flex-row justify-between pt-6 pb-2  items-center'>
+                                <div className='px-4 font-bold'>
                                     <h2 className='text-xl'>Cart</h2>
                                 </div>
-                                <div className='md:w-2/6 flex gap-4 items-center'>
-                                    <h2>Total cost: 999</h2>
-                                    <button className='flex gap-2 items-center border-2 p-2 rounded-4xl text-[rgb(149,56,226)] border-[rgb(149,56,226)] font-semibold'>Sort By Price <GiSettingsKnobs></GiSettingsKnobs></button>
+                                <div className='flex gap-4 items-center'>
+                                    <h2 className='font-semibold'>Total cost: ${totalCost}</h2>
 
-                                    <button className='px-4 py-2 rounded-4xl text-white bg-[rgb(149,56,226)]'>Purchase</button>
+                                    <button onClick={() => handleSort('price')} className='flex gap-2 items-center border-2 p-2 rounded-4xl text-[rgb(149,56,226)] border-[rgb(149,56,226)] font-semibold'>Sort By Price <GiSettingsKnobs></GiSettingsKnobs></button>
+
+
+
+                                    <button
+                                        disabled={gadget.length === 0 || totalCost === 0}
+                                        onClick={() => handlePurchase()}
+                                        className={`px-4 py-2 rounded-4xl text-white ${gadget.length === 0 || totalCost === 0
+                                            ? 'bg-gray-400 cursor-not-allowed'
+                                            : 'bg-[rgb(149,56,226)]'
+                                            }`}
+                                    >
+                                        Purchase
+                                    </button>
+
+
                                 </div>
                             </div>
 
                             {
-                                gadget.map(gadget => <AddToCart key={gadget.product_id} gadget={gadget}></AddToCart>)
+
+                                gadget.map((gadget, index) => (
+                                    <AddToCart handleRemove={handleRemove} key={index} gadget={gadget} />
+                                ))
+
                             }
+
+
                         </div>
                     </TabPanel>
 
@@ -80,13 +138,39 @@ const Dashboard = () => {
 
 
                             {
-                                wishlist.map(wishlist => <WishList key={wishlist.product_id} wishlist={wishlist}></WishList>)
+                                wishlist.map(wishlist => <WishList handleAddToCart={handleAddToCart} handleRemoveWishlist={handleRemoveWishlist} key={wishlist.product_id} wishlist={wishlist}></WishList>)
                             }
                         </div>
-                        
+
                     </TabPanel>
                 </div>
             </Tabs>
+
+            <dialog id="my_modal_1" className="modal">
+                <div className="modal-box text-center">
+
+                    <img className='mx-auto w-10 h-10' src={image} alt="" />
+                    <h1 className='text-2xl font-bold py-4'>Payment Successfully</h1>
+                    <p className="py-2 text-gray-600">Thanks for purchasing.</p>
+                    <h2 className=' text-gray-600'>Total: ${totalCost}</h2>
+                    <div className="modal-action justify-center ">
+                        <form method="dialog">
+                            <button
+                                onClick={() => {
+                                    localStorage.removeItem('carts');
+                                    setGadget([]);
+                                    navigate('/');
+                                }}
+                                className="md:px-20 btn bg-gray-300 rounded-full hover:bg-[rgb(120,40,180)] hover:text-white"
+                            >
+                                Close
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
+
+
         </div>
     );
 };

@@ -1,3 +1,6 @@
+import toast from "react-hot-toast"
+
+
 //get all CART from local storage
 const getAllCarts = () => {
 
@@ -20,6 +23,7 @@ const addCart = id => {
     carts.push(id);
 
     localStorage.setItem('carts', JSON.stringify(carts))
+    toast.success('Adding item to Cart!')
 }
 
 
@@ -27,13 +31,12 @@ const addCart = id => {
 //remove a coffee from local storage
 const removeCart = id => {
     //get all previously saved coffee data
-    const favorites = getAllFavorites()
-    const remaining = favorites.filter(coffee => coffee.id != id)
+    const carts = getAllCarts()
+    const remaining = carts.filter(cartId => cartId != id)
 
-    localStorage.setItem('favorites', JSON.stringify(remaining))
-    toast.success('Successfully Removed!');
+    localStorage.setItem('carts', JSON.stringify(remaining))
+    toast.error('Remove item from Cart!');
 }
-
 
 
 //get all wishlist from local storage
@@ -58,9 +61,16 @@ const addWishlist = id => {
     wishlists.push(id);
 
     localStorage.setItem('wishlists', JSON.stringify(wishlists))
+    toast.success('Adding item to Wishlist!')
+}
+
+const removeWishlist = id => {
+    const wishlists = getAllWishlist()
+    const remaining = wishlists.filter(wishId => wishId !== id)
+    localStorage.setItem('wishlists', JSON.stringify(remaining))
+    toast.error('Removed item from Wishlist!');
 }
 
 
 
-
-export {getAllCarts, addCart, getAllWishlist, addWishlist}
+export {getAllCarts, addCart, getAllWishlist, addWishlist, removeCart, removeWishlist}
