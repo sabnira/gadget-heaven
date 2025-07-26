@@ -1,12 +1,38 @@
-# React + Vite
+# 📱 Gadget Heaven - React E-commerce Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Gadget Heaven** is a React-based e-commerce web application where users can explore gadgets, view detailed product information, and manage cart and wishlist items. The project is built using essential React concepts like components, props, state, hooks (`useState`, `useEffect`, `useParams`), and routing with `react-router-dom`. It uses **Local Storage** for handling and managing cart and wishlist data, allowing user preferences to persist across sessions.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Project Links
 
-## Expanding the ESLint configuration
+- 🌐 **Live Website:** [https://your-live-website-link.com](https://your-live-website-link.com)  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚛️ React Concepts Used
+
+- Functional Components  
+- JSX Syntax  
+- Props and State  
+- React Hooks (`useState`, `useEffect`, `useParams`)  
+- Routing with `react-router-dom`  
+- Conditional Rendering  
+
+---
+
+## 🧠 Data Management
+
+- **Local Storage** is used to store:
+  - Cart items
+  - Wishlist items
+
+---
+
+## 🚀 Key Features
+
+1. Product listing and individual product detail pages  
+2. Add to Cart functionality with persistent storage  
+3. Add to Wishlist option (one-time add with disabled button)  
+4. Star rating system using `react-awesome-stars-rating`  
+5. Fully responsive design for mobile and desktop
+
+

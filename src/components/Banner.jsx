@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import banner from "../assets/banner.jpg"
 
 const Banner = () => {
@@ -11,7 +12,8 @@ const Banner = () => {
                             <p className="py-8 max-w-2xl mx-auto">
                                 Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!
                             </p>
-                            <button className="btn text-[rgb(149,56,226)] font-bold shadow-none px-6 py-6 rounded-4xl text-lg">Shop Now</button>
+                            <NavLink to="/dashboard" className="btn text-[rgb(149,56,226)] font-bold shadow-none px-6 py-6 rounded-4xl text-lg">Shop Now</NavLink>
+                           
                         </div>
                     </div>
                 </div>

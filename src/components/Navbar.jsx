@@ -29,10 +29,15 @@ const Navbar = () => {
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 gap-8 ">
 
-                    <NavLink to='/'>Home</NavLink>
-                    <NavLink>Statistics</NavLink>
-                    <NavLink to='/about'>About Us</NavLink>
-                    <NavLink to='/dashboard'>Dashboard</NavLink>
+                    <NavLink 
+                    className={({isActive}) => `${isActive ? 'font-bold underline' : ''}`}
+                    to='/'>Home</NavLink>
+
+                    <NavLink >Statistics</NavLink>
+
+                    <NavLink className={({isActive}) => `${isActive ? 'font-bold underline' : ''}`} to='/about'>About Us</NavLink>
+
+                    <NavLink className={({isActive}) => `${isActive ? 'font-bold underline' : ''}`} to='/dashboard'>Dashboard</NavLink>
         
 
                 </ul>

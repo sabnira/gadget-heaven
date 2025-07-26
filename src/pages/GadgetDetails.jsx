@@ -11,12 +11,16 @@ const GadgetDetails = () => {
     const { id } = useParams();
 
     const [gadget, setGadget] = useState({});
+ 
 
     useEffect(() => {
         const singleData = data.find(gadget => gadget.product_id == id)
         setGadget(singleData)
+
     }, [data, id])
 
+
+   
     const {product_id, product_title, product_image, price, description, Specification, availability, rating } = gadget;
 
     const handleGadget = id => {
